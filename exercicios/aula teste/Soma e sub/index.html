@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma e Subtração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Soma ou Subtração</h1>
+    </header>
+    <section>
+        <div id="dados">
+            <p>Digite um número: <input type="number" name="txtn1" id="txtn1"></p>
+            <p>Digite outro número: <input type="number" name="txtn2" id="txtn2"></p>
+            <p>Escolha sua opção:<input type="radio" name="radnum" id="som">
+              <label for="som">Soma</label>
+              <input type="radio" name="radnum" id="sub">
+              <label for="sub">Subtração</label></p>
+            <p><input type="button" value="Confirma" onclick="verificar()"></p>
+        </div>
+        <div id="res">
+            <p>Preencha os dados acima para ver os resultados</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Cursoemvideo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

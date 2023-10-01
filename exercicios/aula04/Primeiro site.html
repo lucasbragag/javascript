@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro site...</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font: normal 17pt Arial;
+        }
+        h1 {
+            color: rgb(136, 17, 17);
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem vindo(a)</h1>
+    <p>Você está no meu site...</p>
+    <script>
+        window.alert('Você está tentando acessar meu site!')  
+        window.confirm('Tudo bem com você?')
+       var nome = window.prompt('Qual seu nome?') // Pedir nome
+       var idade = Number(window.prompt('Qual a sua idade?')) // Pedir idade
+       document.write(`Seu nome é <strong>${nome}</strong><br/>`) // Mostrar nome
+       document.write(`E você tem ${idade} anos`) // Mostrar idade
+    </script>
+</body>
+</html>

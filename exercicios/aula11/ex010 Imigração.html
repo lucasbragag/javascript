@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigração</title>
+    <style>
+        body {
+            font: normal 12pt Arial;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Imigração do Brasil</h1>
+    <p>Digite abaixo seu país de origem</p>
+    <input type="text" name="txtorig" id="txtorig">
+    <input type="button" value="Confirma" onclick="Verificar()">
+    
+    <div id="res">
+
+    </div>
+
+    <script>
+        var txtor = window.document.getElementById('txtorig')
+        var res = window.document.getElementById('res')
+        
+        function Verificar() {
+            var país = (txtor.value)
+            res.innerHTML = `<p>Seu país de origem é ${país}</p>`
+            if (país.toLowerCase() == 'brasil') {
+                res.innerHTML += `<p>Você é brasileiro(a)</p>`
+                res.innerHTML += '<p>Obrigado por usar nosso sistema :)</p>' 
+            } else {
+                res.innerHTML += '<p>Vocé é estrangeiro(a)</p>'
+                res.innerHTML += '<p>Obrigado por usar nosso sistema :)</p>'
+            }
+        }      
+    </script>
+</body>
+</html>
